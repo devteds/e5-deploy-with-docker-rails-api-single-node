@@ -1,0 +1,9 @@
+#!/bin/sh
+
+if [ "xs" = "x$1" ]; then
+    echo "> docker-compose up"
+    docker-compose up
+else
+    echo "> docker-compose run --rm app rails $@"
+    docker-compose run --rm app rails "$@"
+fi

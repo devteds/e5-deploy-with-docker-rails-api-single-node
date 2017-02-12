@@ -1,0 +1,29 @@
+# Note:
+# Use this as a template. DO NOT check-in staging/production 
+# configs (in docker compose) in the application code
+version: '2'
+services:
+  db:
+    image: mysql:5.7
+    restart: always
+    environment:
+      MYSQL_ROOT_PASSWORD: password
+      MYSQL_DATABASE: railsapp
+      MYSQL_USER: appuser
+      MYSQL_PASSWORD: password
+  app:
+    image: <BLOG API IMAGE>
+    ports:
+      - "3000:3000"
+    depends_on:
+      - db
+    links:
+      - db
+    environment:
+      DB_USER: root
+      DB_NAME: railsapp
+      DB_PASSWORD: password
+      DB_HOST: db
+      RAILS_ENV: production
+      RAILS_LOG_TO_STDOUT: 1
+      SECRET_KEY_BASE: 5156ca5a10c6842c4359d9a78ba14a4ba91cee9394d2e87bb783a0f770469d6afd725d40346d328b705cb2b74ef7de2005701c3449a1dbd1d1bc163ce3b67ec1
