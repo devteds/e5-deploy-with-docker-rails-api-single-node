@@ -4,9 +4,9 @@ Create a new single-node environment for this Rails API application using docker
 
 Build and run API app on the new environment using docker & docker compose
 
-[Episode video link](https://youtu.be/JAZnbA_rQ_M)
+[Episode video link](https://youtu.be/4DSKgheuVns)
 
-[![Episode Video Link](https://i.ytimg.com/vi/JAZnbA_rQ_M/hqdefault.jpg)](https://youtu.be/JAZnbA_rQ_M)
+[![Episode Video Link](https://i.ytimg.com/vi/4DSKgheuVns/hqdefault.jpg)](https://youtu.be/4DSKgheuVns)
 
 ## Tested on
 
@@ -25,7 +25,7 @@ docker-compose build
 bin/d_rails db:migrate
 bin/d_rails db:seed
 # Use REST client or curl to browse the APIs
-http://localhost:3002/posts
+curl http://localhost:3002/posts
 ```
 
 ## Docker image
