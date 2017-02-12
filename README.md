@@ -4,8 +4,6 @@ Create a new single-node environment for this Rails API application using docker
 
 Build and run API app on the new environment using docker & docker compose
 
-Learn how to add pagination to an API in Rails. Application is built and run using docker & docker-compose.
-
 [Episode video link](https://youtu.be/JAZnbA_rQ_M)
 
 [![Episode Video Link](https://i.ytimg.com/vi/JAZnbA_rQ_M/hqdefault.jpg)](https://youtu.be/JAZnbA_rQ_M)
