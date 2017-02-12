@@ -67,4 +67,6 @@ docker-compose -f docker-compose-staging.yml start app
 
 docker-compose -f docker-compose-staging.yml logs app
 docker-compose -f docker-compose-staging.yml logs db
+
+curl http://$(docker-machine ip blog-staging):3000/posts
 ```
