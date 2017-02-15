@@ -18,7 +18,7 @@ Build and run API app on the new environment using docker & docker compose
 ## Run this application on local
 
 ```
-git clone git clone https://github.com/ec-codecasts/e5-deploy-with-docker-rails-api-single-node.git
+git clone https://github.com/ec-codecasts/e5-deploy-with-docker-rails-api-single-node.git
 cd e5-deploy-with-docker-rails-api-single-node
 # edit docker-compose.yml to set the mysql & rails ports to be mapped on host
 docker-compose build
